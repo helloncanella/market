@@ -1,0 +1,23 @@
+= provide(:title, 'Editar Produto')
+.row
+	.col-md-3
+		%h1 Novo produto
+		= form_for @product, :html =>{ class: "form-group" } do |f|
+			
+			.form-group
+				= f.label :name, "Nome"
+				= f.text_field :name, class: "form-control"
+
+			.form-group
+				= f.label :description, "Descrição"
+				= f.text_area :description, class: "form-control"
+
+			.form-group
+				= f.label :image, "Localização da Imagem"
+				= f.text_field :image, class: "form-control"
+
+			.form-group
+				= f.label :preco, "Preço"
+				= f.text_field :preco, class: "form-control"
+
+			=f.submit "Adicionar", class: "btn btn-success"

@@ -1,0 +1,25 @@
+.box{
+	
+	margin-top:1.68vw;
+
+	.image{
+		margin-left: 1em;
+	}
+
+	.information{
+		.counter-button-preco{
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+
+			p{
+				margin:0;
+			}
+			
+		}/*.counter-button-preco*/
+	}/*END - .information */
+
+	.additional-column{
+	}
+
+}

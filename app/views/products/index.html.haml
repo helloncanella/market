@@ -1,0 +1,11 @@
+- provide(:title,'Todos Produtos')
+
+%h1 Todos os produtos
+%ul.produtos
+	- @products.each do |produto|
+		%h3 Nome 
+		%p= produto.name
+		
+		%h3 Preço
+		%p R$= produto.preco
+

@@ -1,0 +1,18 @@
+- provide(:title, "Início")
+
+
+%ul.produtos.padding-zero
+	- @products.in_groups_of(4) do |group|
+		.row
+			- group.each do |product|
+				.col-sm-3
+					.thumbnail
+						= image_tag "#{product.image}"
+						.caption
+							%h3= product.name
+							%p= "R$ #{product.preco}"
+							%p.button
+							= link_to product do
+								%button{:class=> "btn btn-primary pull-right", :role => 'buttom'} Ver
+									
+

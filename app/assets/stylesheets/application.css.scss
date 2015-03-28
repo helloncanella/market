@@ -1,0 +1,142 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+		
+.counter-button{
+	display: flex;
+
+	.counter{
+		display:flex;
+		align-items: center;
+		margin-right: 15px; 
+		.up-down{
+			display:flex;
+			flex-direction: column;
+			background-color: gray;
+			color:white;
+			border-radius:5px 0 0px 5px;
+
+			.glyphicon{
+				font-size:0.8em;
+				padding:2.5px;
+				padding-left: 5.5px;
+			}
+
+			.glyphicon:hover{
+				color:black;
+			}
+
+		}/* END -.up-down */
+
+		input.amount{
+			width:4.23em;
+			padding:4px;
+			text-align: right;	
+
+		}
+	}/* END - .counter */
+
+}/*END - .counter-button */
+
+	
+
+
+
+
+
+.margin-zero{
+	margin:0;
+}
+
+.padding-zero{
+	padding:0;
+}	
+
+header{
+
+	
+	.second-bar{
+		background: hsl(351,78%,48%);
+		height:10em;
+	}
+
+	.container{
+		height:0;
+
+		img{
+			width:7.5vw;
+			position:relative;
+			bottom:10em;
+		}
+
+	}
+
+}
+
+main{
+	
+	textarea.form-control{
+		height:10vw;
+	}	
+
+	.thumbnail{
+		margin-top:1vw;
+		overflow: auto;		
+
+  		p.button{
+  			display:flex;
+			justify-content: flex-end;
+  			
+  		}
+
+	}
+
+
+}
+
+footer{
+	bottom:0;
+	width:100%;
+
+	img{
+		float:right;
+		width:29%;
+		position: static;
+	}
+	.first-floor{
+		width:100%;
+		height:6.85em;
+		background-color:black;
+	}
+	.second-floor{
+		width:100%;
+		height:1em;
+		background-color:hsl(351,78%,48%);
+	}
+}
+
