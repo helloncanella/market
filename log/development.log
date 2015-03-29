@@ -57458,3 +57458,302 @@ Processing by ProductsController#show as HTML
   Rendered products/_counter.html.haml (0.0ms)
   Rendered products/show.html.haml within layouts/application (6.0ms)
 Completed 200 OK in 321ms (Views: 314.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-29 19:46:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.8) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hellon/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/hellon/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/hellon/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/hellon/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /home/hellon/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/hellon/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/hellon/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTestes (20150328222244)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150328222244"]]
+  [1m[36m (81.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTests (20150328222258)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "tests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150328222258"]]
+  [1m[36m (76.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-29 19:47:18 -0300
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by StaticPagesController#home as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered static_pages/home.html.haml within layouts/application (102.8ms)
+Completed 200 OK in 4378ms (Views: 4339.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/baskets.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/show.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/baskets.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/2.jpg" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/3.jpg" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/20131108_001.jpg" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/20140520_001.jpg" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/20140711-06.jpg" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/20140820-04.jpg" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/20140820-21.jpg" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/20140820-24.jpg" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/monukuruboo.svg" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/assets/5.jpg" for 127.0.0.1 at 2015-03-29 19:47:23 -0300
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-03-29 19:47:28 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProduct Load (0.7ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered products/_counter.html.haml (2.9ms)
+  Rendered products/show.html.haml within layouts/application (37.2ms)
+Completed 200 OK in 247ms (Views: 240.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-03-29 19:47:29 -0300
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-03-29 19:47:35 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered products/_counter.html.haml (2.4ms)
+  Rendered products/show.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 171ms (Views: 168.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/baskets.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/show.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/baskets.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/2.jpg" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/monukuruboo.svg" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-03-29 19:47:36 -0300
