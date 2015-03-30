@@ -27,41 +27,7 @@
 
 
 		
-.counter-button{
-	display: flex;
 
-	.counter{
-		display:flex;
-		align-items: center;
-		margin-right: 15px; 
-		.up-down{
-			display:flex;
-			flex-direction: column;
-			background-color: gray;
-			color:white;
-			border-radius:5px 0 0px 5px;
-
-			.glyphicon{
-				font-size:0.8em;
-				padding:2.5px;
-				padding-left: 5.5px;
-			}
-
-			.glyphicon:hover{
-				color:black;
-			}
-
-		}/* END -.up-down */
-
-		input.amount{
-			width:4.23em;
-			padding:4px;
-			text-align: right;	
-
-		}
-	}/* END - .counter */
-
-}/*END - .counter-button */
 
 	
 

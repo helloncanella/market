@@ -1,0 +1,21 @@
+.row.box#basket
+  .wrap
+    .col-sm-5.col#product
+      %h3 Produto
+      .description
+        .col-sm-4.col
+          %img{:src=>"http://goo.gl/PQUZju",:class=>"img-responsive"}
+        .col-sm-8.col
+          %h4 Chapisco na Mantega
+    .col-sm-2.col#price
+      %h3 Preço
+      %p.lead R$1000,00
+    .col-sm-2.col#amount
+      %h3 Quantidade 
+      .counter
+        .down.glyphicon.glyphicon-minus{'data-counter'=>'down'}
+        %input{:type => "text", :class =>"amount", :value => 0} 
+        .up.glyphicon.glyphicon-plus{'data-counter'=>'up'}
+    .col-sm-2.col#total
+      %h3 Total
+      %p.lead R$ 3000,00

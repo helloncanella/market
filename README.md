@@ -1,17 +1,18 @@
-# market - 1st Approack
+# market - 1st Approach
 
-## *User* - Model of activity 
+	##Activity
 
-	* The user can
-		- add a product into the basket
-		- retire 
-		- see the basket
-		- drop the basket
-		- checkout
-		- change the number of products
+		### User 
 
-## *Basket* - Model of activity
+				- add a product into the basket
+				- retire 
+				- see the basket
+				- drop the basket
+				- checkout
+				- change the number of products
 
-	- show amount of product required by the user
+		### Basket
 
-		
+			- show amount of product required by the user
+			- show all products
+			- calculate the the price of the product based in the amount of the product	
