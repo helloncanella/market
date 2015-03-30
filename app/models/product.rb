@@ -1,3 +1,4 @@
 class Product < ActiveRecord::Base
-	belongs_to :basket
+	has_and_belongs_to_many :baskets
+	has_many :users :through :baskets 
 end
